@@ -1,0 +1,9 @@
+# Build
+$ make CROSS_COMPILE=aarch64-linux-
+
+# Run
+$ sudo ./input-status /dev/input/by-path/platform-i8042-serio-0-event-kbd KEY_LEFTSHIFT
+KEY_LEFTSHIFT:1
+
+$ sudo ./input-status /dev/input/by-path/platform-i8042-serio-0-event-kbd KEY_LEFTSHIFT
+KEY_LEFTSHIFT:0
